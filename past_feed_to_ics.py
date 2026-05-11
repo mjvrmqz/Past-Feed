@@ -143,7 +143,7 @@ def delete_page(page_id):
     if resp.status_code != 200:
         raise RuntimeError(f"Failed to delete page {page_id}: {resp.status_code} {resp.text}")
 
-def create_ics(pages, output_file="past_feed.ics"):
+def create_ics(pages, output_file="Past Feed.ics"):
     cal = Calendar()
     for page in pages:
         try:
@@ -210,7 +210,7 @@ def main():
 
     print("\nGenerating ICS feed from Past Feed...")
     past_feed_pages = query_database(PAST_FEED_DB)
-    create_ics(past_feed_pages, output_file="past_feed.ics")
+    create_ics(past_feed_pages, output_file="Past Feed.ics")
 
     now = datetime.now(timezone.utc).strftime("%Y%m%dT%H%M%SZ")
     print(f"Feed updated at {now}")
