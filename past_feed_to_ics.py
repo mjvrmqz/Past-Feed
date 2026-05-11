@@ -106,7 +106,7 @@ def build_page_payload(props):
         },
         "Actionable Steps": {
             "rich_text": [{"type": "text", "text": {"content": props["actionable_steps"]}}]
-            if props["actionable_steps"] else {"rich_text": []}
+            if props["actionable_steps"] else []
         },
     }
     if props["time"]:
