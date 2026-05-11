@@ -11,7 +11,7 @@ fi
 python3 past_feed_to_ics.py
 
 git remote set-url origin https://github.com/mjvrmqz/Past-Feed.git
-git stash
+git stash --include-untracked
 git fetch origin
 git rebase origin/main
 git stash pop
