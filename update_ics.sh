@@ -20,3 +20,11 @@ git add "Past Feed.ics"
 git diff --cached --quiet && echo "No changes to ICS, skipping commit." && exit 0
 git commit -m "Update ICS feed $(date -u +"%Y%m%dT%H%M%SZ")"
 git push origin main
+
+echo ""
+echo "=== Updating Personal Feed ==="
+bash "/Users/mjvrmqz/Personal/Scripts/Notion/Jarwix/Calendar Feeds/Personal Feed/update_ics.sh"
+
+echo ""
+echo "=== Updating Work Feed ==="
+bash "/Users/mjvrmqz/Personal/Scripts/Notion/Jarwix/Calendar Feeds/Work Feed/update_ics.sh"
