@@ -2,10 +2,17 @@ BEGIN:VCALENDAR
 VERSION:2.0
 PRODID:ics.py - http://git.io/lLljaA
 BEGIN:VEVENT
+DESCRIPTION:Gym session with brother Jairo — coordinate meet-up\, warm up\, complete workout\, and cool down together for an active and social personal wellness block.
+DTEND:20260517T052000Z
+DTSTART:20260517T032000Z
+SUMMARY:Gym Session with Jairo
+UID:6db11d3d-f609-4d6e-b979-b44fba98fe7c@6db1.org
+END:VEVENT
+BEGIN:VEVENT
 DESCRIPTION:lolzers
 DTEND:20260512T010000Z
 DTSTART:20260512T000000Z
 SUMMARY:hey
-UID:ad464b55-4f49-48ab-928d-c00357e37961@ad46.org
+UID:b74bdbc9-256a-4a5d-97dc-059c861b8f58@b74b.org
 END:VEVENT
 END:VCALENDAR
